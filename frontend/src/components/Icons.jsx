@@ -1,0 +1,21 @@
+const base = { width: 22, height: 22, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: 1.7, strokeLinecap: "round", strokeLinejoin: "round", "aria-hidden": true };
+const I = (children) => (props) => <svg {...base} {...props}>{children}</svg>;
+
+export const HomeIcon = I(<><path d="M3 11l9-8 9 8" /><path d="M5 10v10h14V10" /></>);
+export const BarIcon = I(<><rect x="4" y="3" width="16" height="18" rx="3" /><path d="M9 17v-4M12 17V8M15 17v-6" /></>);
+export const PieIcon = I(<><circle cx="12" cy="12" r="9" /><path d="M12 3v9h9" /></>);
+export const BoxIcon = I(<><rect x="4" y="3" width="16" height="18" rx="3" /><path d="M4 13h16M9 16h6" /></>);
+export const MoonIcon = I(<path d="M20 14.5A8.5 8.5 0 019.5 4a8.5 8.5 0 1010.5 10.5z" />);
+export const GearIcon = I(<><circle cx="12" cy="12" r="3" /><path d="M19.4 15a1.7 1.7 0 00.3 1.8l.1.1a2 2 0 11-2.8 2.8l-.1-.1a1.7 1.7 0 00-1.8-.3 1.7 1.7 0 00-1 1.5V21a2 2 0 11-4 0v-.1a1.7 1.7 0 00-1-1.5 1.7 1.7 0 00-1.8.3l-.1.1a2 2 0 11-2.8-2.8l.1-.1a1.7 1.7 0 00.3-1.8 1.7 1.7 0 00-1.5-1H3a2 2 0 110-4h.1a1.7 1.7 0 001.5-1 1.7 1.7 0 00-.3-1.8l-.1-.1a2 2 0 112.8-2.8l.1.1a1.7 1.7 0 001.8.3h0a1.7 1.7 0 001-1.5V3a2 2 0 114 0v.1a1.7 1.7 0 001 1.5h0a1.7 1.7 0 001.8-.3l.1-.1a2 2 0 112.8 2.8l-.1.1a1.7 1.7 0 00-.3 1.8v0a1.7 1.7 0 001.5 1H21a2 2 0 110 4h-.1a1.7 1.7 0 00-1.5 1z" /></>);
+export const SearchIcon = I(<><circle cx="11" cy="11" r="7" /><path d="M20 20l-3.5-3.5" /></>);
+export const BellIcon = I(<><path d="M18 8a6 6 0 10-12 0c0 7-3 9-3 9h18s-3-2-3-9" /><path d="M13.7 21a2 2 0 01-3.4 0" /></>);
+export const CalendarIcon = I(<><rect x="3" y="5" width="18" height="16" rx="3" /><path d="M8 3v4M16 3v4M3 10h18" /></>);
+export const ChevronDown = I(<path d="M6 9l6 6 6-6" />);
+export const ChevronLeft = I(<path d="M15 6l-6 6 6 6" />);
+export const ChevronRight = I(<path d="M9 6l6 6-6 6" />);
+export const PlusIcon = I(<path d="M12 5v14M5 12h14" />);
+export const CheckIcon = I(<path d="M5 12.5l4.5 4.5L19 7.5" />);
+export const UndoIcon = I(<><path d="M9 14L4 9l5-5" /><path d="M4 9h10a6 6 0 010 12h-3" /></>);
+export const EditIcon = I(<><path d="M4 20h4L19 9a2.8 2.8 0 00-4-4L4 16z" /><path d="M13.5 6.5l4 4" /></>);
+export const TrashIcon = I(<><path d="M4 7h16M10 11v6M14 11v6" /><path d="M6 7l1 13h10l1-13M9 7V4h6v3" /></>);
+export const CloseIcon = I(<path d="M6 6l12 12M18 6L6 18" />);
