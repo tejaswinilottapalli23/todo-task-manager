@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: tejaswini-lottapalli-todo-manager
+    runtime: python
+    buildCommand: bash build.sh
+    startCommand: cd backend && python manage.py migrate && gunicorn config.wsgi:application
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.3
+      - key: NODE_VERSION
+        value: 20.11.0
+      - key: DJANGO_DEBUG
+        value: "0"
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: DJANGO_ALLOWED_HOSTS
+        value: ".onrender.com"
