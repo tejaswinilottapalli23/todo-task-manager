@@ -2,6 +2,7 @@ services:
   - type: web
     name: tejaswini-lottapalli-todo-manager
     runtime: python
+    plan: free
     buildCommand: bash build.sh
     startCommand: cd backend && python manage.py migrate && gunicorn config.wsgi:application
     envVars:
